@@ -1,19 +1,7 @@
-name: CI
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-  workflow_dispatch:
+name: JS Actions
+on: [push]
 jobs:
-  build:
+  action:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Hello World 1
-        run: echo Hello World
-      - name: Hello World 2
-        run: |
-          echo First line
-          echo Second line
+      - uses: actions/checkout@v1
