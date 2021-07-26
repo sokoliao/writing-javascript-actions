@@ -12,8 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello World 1
-        runs: echo Hello World
+        run: echo Hello World
       - name: Hello World 2
-        runs: |
+        run: |
           echo First line
           echo Second line
