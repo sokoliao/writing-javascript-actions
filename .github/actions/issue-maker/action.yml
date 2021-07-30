@@ -1,0 +1,10 @@
+name: issue maker
+description: it makes issues
+inputs:
+  jokes:
+    description: something funny
+    required: true
+    default: "..."
+using:
+  uses: "node12"
+  main: "main.js"
